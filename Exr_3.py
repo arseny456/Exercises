@@ -11,12 +11,13 @@ class Counter:
         self.value = 0
 
     def display(self):
-        print('Текущее значение счтчика' + str(self.value))
+        print('Текущее значение счтчика' + ' = ' + str(self.value))
 
 
 cl = Counter()
-cl.start_from()
+cl.start_from(2)
 cl.increment()
+cl.display()
 cl.increment()
 cl.display()
 cl.reset()
